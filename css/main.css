@@ -1,0 +1,265 @@
+.info-content {
+    border: 1px solid transparent;
+    color: #f3ffff;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .info-content .title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .info-content .paragraph {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    .info-content {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 80px;
+      text-align: left;
+    }
+    .info-content .title {
+      font-size: 47px;
+      line-height: 55px;
+      max-width: 413px;
+    }
+    .info-content .paragraph {
+      line-height: 25px;
+      max-width: 495px;
+    }
+  }
+  .form {
+    background-color: #f3ffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 0px 0px #FFFF00;
+    height: 500px;
+    margin-bottom: 100px;
+    padding-top: 27px;
+    display: flex;
+    align-items: center;
+  }
+  .form .form-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form .form-inputs input {
+    border-radius: 10px;
+    border: 1px solid #b9b6d3;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 25px;
+    width: 255px;
+  }
+  .form .form-inputs input:focus,
+  .form .form-inputs input input.form-control:focus {
+    border-color: #3e3c49;
+    box-shadow: none;
+    outline: none;
+    outline-width: 0;
+  }
+  .form .form-inputs p {
+    display: block;
+    color: #b9b6d3;
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: 16px;
+    text-align: center;
+    width: 280px;
+  }
+  .form .form-inputs p a {
+    color: #ff7a7a;
+    font-weight: 500;
+  }
+  .form .form-inputs p a:hover {
+    text-decoration: underline;
+  }
+  .form .form-inputs .info {
+    color: #ff7a7a;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: right;
+    width: 280px;
+  }
+  @media screen and (min-width: 1024px) {
+    .form-content {
+      width: 540px;
+    }
+    .form {
+      margin-bottom: 0;
+      padding-top: 30px;
+      width: 540px;
+      height: 485px;
+    }
+    .form .form-inputs input {
+      width: 80%;
+    }
+    .form .form-inputs p {
+      width: 80%;
+    }
+    .form .form-inputs .info {
+      width: 85%;
+    }
+  }
+  .btn-purple {
+    align-items: center;
+    background-color: purple;
+    border-radius: 10px;
+    box-shadow: 0px 10px 0px 0px #FFFF00;
+    cursor: pointer;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .btn-purple:active {
+    background-color: #49417d;
+    box-shadow: 0px 0px 0px 0px #FFFF00;
+  }
+  .btn-purple a {
+    display: block;
+    font-size: 15px;
+    font-weight: 200;
+    height: 45px;
+    line-height: 26px;
+    width: 150px;
+  }
+  .btn-purple a span {
+    font-weight: 600;
+  }
+  .btn-green {
+    background-color: #38cc8c;
+    border-bottom: 5px solid #49ae84;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 57px;
+    line-height: 57px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 280px;
+    font-weight: 400;
+  }
+  .btn-green:active {
+    background-color: #49ae84;
+  }
+  .btn-green:hover{
+    background: #808000;
+    color: #ffff;
+    transition: 0.5%;
+  }
+  @media screen and (min-width: 1024px) {
+    .btn-purple {
+      height: 62px;
+    }
+    .btn-purple a {
+      height: 100%;
+      line-height: 62px;
+      width: 100%;
+    }
+    .btn-purple a span {
+      font-weight: 600;
+    }
+    .btn-green {
+      width: 85%;
+    }
+  }
+  .info-error {
+    border: 2px solid #ff7a7a;
+    color: #ff7a7a;
+  }
+  .info-error:focus,
+  .info-error input.form-control:focus {
+    border-color: #3e3c49;
+    color: #3e3c49;
+  }
+  .img-error {
+    background-image: url("../assest/network-connection-background-abstract-style_23-2148875738.avif");
+    background-position-x: 230px;
+    background-position-y: 13px;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 1024px) {
+    .img-error {
+      background-position-x: 405px;
+    }
+  }
+  .alert-success {
+    background-color: #38cc8c;
+    border-radius: 5px;
+    color: #f3ffff;
+    font-size: 14px;
+    height: 25px;
+    left: 40px;
+    line-height: 25px;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: -15px;
+    width: 250px;
+  }
+  .visible {
+    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @media screen and (min-width: 1024px) {
+    .alert-success {
+      left: 150px;
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(55px);
+      opacity: 1;
+    }
+  }
+  body {
+    background-image: url("../assest/network-connection-background-abstract-style_23-2148875738.avif");
+    background-position: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #808000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+  body main {
+    width: 330px;
+  }
+  body a {
+    color: #f3ffff;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 768px) {
+    body {
+      background-image: url("../assest/network-connection-background-abstract-style_23-2148875738.avif");
+      background-repeat: repeat;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    body {
+      height: 100vh;
+      align-items: center;
+    }
+    main {
+      display:inline-flex;
+      align-items: center;
+      width: 80vw !important;
+      height: 85vh;
+    }
+  }
+  
